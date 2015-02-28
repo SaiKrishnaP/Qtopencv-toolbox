@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1029</width>
+    <height>494</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="lblOriginal">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>450</width>
+     <height>350</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblProcessed">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>10</y>
+     <width>450</width>
+     <height>350</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnPauseOrResume">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>380</y>
+     <width>114</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>pause</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="txtXYRadius">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>380</y>
+     <width>191</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>430</y>
+     <width>111</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Input</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Image</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Video</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>430</y>
+     <width>111</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Color Spaces</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Salt and Pepper noise</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Gray</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>HLS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>LAB</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>RGB</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>HSV</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>YCbCr</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>YUV</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Histogram</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Equalise Histogram</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>430</y>
+     <width>111</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Shape</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sobel</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Laplacian</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Kernel</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Canny</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Hough Lines</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Hough Circles</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Contours</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bounding Box</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Minimum Enclosing Circle</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_4">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>430</y>
+     <width>111</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Morphological Operations</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dilate</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Erode</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cross</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ellipse</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Open</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Rect</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_5">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>430</y>
+     <width>111</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Filters</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Homogenous Blur</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Gaussian Blur</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Median Blur</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bilateral Blur</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_6">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>430</y>
+     <width>111</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Feature Extractors</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Harris</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Shi-Tomasi</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>FAST</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SURF</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SIFT</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Convex Hull</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>380</y>
+     <width>114</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Homography</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>380</y>
+     <width>114</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mosiac</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>380</y>
+     <width>114</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Match</string>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_7">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>430</y>
+     <width>111</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Fundamental Matrix</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7 Point Method</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>8 Point Method</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>RANSAC</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QSlider" name="horizontalSlider">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>360</y>
+     <width>451</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>150</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
